@@ -10,19 +10,13 @@
   var wedgewood = new DonutShop('Wedgewood', 2, 28, 1.25);
   var ballard = new DonutShop('Ballard', 8, 58, 3.75);
 
-  var renderNewSHops = function () {
-    shopData.forEach(function(shop) {
-    elTable.appendChild(shop.render());
-  });
-  }
   var renderAllShops = function() {
-  elTable.innerHTML = '<tr><th style="font-family: Helvetica; font-size: 15px"></th><td style="font-family: Helvetica; font-size: 15px; "> 6 AM </td><td style="font-family: Helvetica; font-size: 15px"> 7 AM </td><td style="font-family: Helvetica; font-size: 15px"> 8 AM </td><td style="font-family: Helvetica; font-size: 15px"> 9 AM </td><td style="font-family: Helvetica; font-size: 15px"> 10 AM </td><td style="font-family: Helvetica; font-size: 15px"> 11 PM </td><td style="font-family: Helvetica; font-size: 15px"> 12 PM </td><td style="font-family: Helvetica; font-size: 15px"> 1 PM </td><td style="font-family: Helvetica; font-size: 15px"> 2 PM </td><td style="font-family: Helvetica; font-size: 15px"> 3 PM </td><td style="font-family: Helvetica; font-size: 15px"> 4 PM </td><td style="font-family: Helvetica; font-size: 15px"> 5 PM </td><td style="font-family: Helvetica; color: orange; font-size: 18px">Total</td></tr>';
-  elTable.appendChild(downtown.render());
-  elTable.appendChild(capitolHill.render());
-  elTable.appendChild(southLakeUnion.render());
-  elTable.appendChild(wedgewood.render());
-  elTable.appendChild(ballard.render());
-  renderNewSHops();
+    elTable.innerHTML = '<tr><th style="font-family: Helvetica; font-size: 15px"></th><td style="font-family: Helvetica; font-size: 15px; "> 6 AM </td><td style="font-family: Helvetica; font-size: 15px"> 7 AM </td><td style="font-family: Helvetica; font-size: 15px"> 8 AM </td><td style="font-family: Helvetica; font-size: 15px"> 9 AM </td><td style="font-family: Helvetica; font-size: 15px"> 10 AM </td><td style="font-family: Helvetica; font-size: 15px"> 11 PM </td><td style="font-family: Helvetica; font-size: 15px"> 12 PM </td><td style="font-family: Helvetica; font-size: 15px"> 1 PM </td><td style="font-family: Helvetica; font-size: 15px"> 2 PM </td><td style="font-family: Helvetica; font-size: 15px"> 3 PM </td><td style="font-family: Helvetica; font-size: 15px"> 4 PM </td><td style="font-family: Helvetica; font-size: 15px"> 5 PM </td><td style="font-family: Helvetica; color: orange; font-size: 18px">Total</td></tr>';
+    elTable.appendChild(downtown.render());
+    elTable.appendChild(capitolHill.render());
+    elTable.appendChild(southLakeUnion.render());
+    elTable.appendChild(wedgewood.render());
+    elTable.appendChild(ballard.render());
   }
 
   var handleShopFormSubmit = function(event) {
@@ -45,9 +39,8 @@
     event.target.maxCustomers.value = null;
     event.target.avgDonut.value = null;
     shopData.push(newDonutShop);
-    renderAllShops();
+    elTable.appendChild(newDonutShop.render());
 };
     shopForm.addEventListener('submit', handleShopFormSubmit);
-    renderAllShops()
-
+    renderAllShops();
 })();
