@@ -2,3 +2,5 @@ This is a domain model that calculates an estimated amount of donuts five Top Po
 
 The model creates a random amount of customers and from this it is able to calculate a hourly total of donuts and a daily total of donuts.
 
+It has an event to add new locations to the table.
+

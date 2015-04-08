@@ -1,8 +1,10 @@
+(function () {
 var DonutShop = function (shop, minCustomers, maxCustomers, AvgDonuts) {
   this.shop = shop;
   this.minCustomers = minCustomers;
   this.maxCustomers = maxCustomers;
   this.AvgDonuts = AvgDonuts;
+  this.location = location;
   this.hourly = [];
   this.dayTotals = 0;
 };
@@ -16,7 +18,7 @@ DonutShop.prototype.hourlyAmount = function() {
 };
 
 DonutShop.prototype.dailyAmount = function() {
-  for(var i = 0; i < 13; i++) {
+  for(var i = 0; i < 12; i++) {
     var hourlyTotal = this.hourlyAmount();
     this.hourly.push(hourlyTotal);
     this.dayTotals += hourlyTotal;
@@ -26,25 +28,22 @@ DonutShop.prototype.dailyAmount = function() {
 
 DonutShop.prototype.render = function() {
   var dailyTotal = this.dailyAmount();
-  var tableRow = document.getElementById(this.shop);
-  for (var i = 0; i < 13; i++) {
-    var tableData = document.createElement('td');
-    tableData.textContent = this.hourly[i];
-    tableRow.appendChild(tableData);
+  var elTableRow = document.createElement('tr');
+  var elTableHead = document.createElement('th');
+  var elDailyTotal = document.createElement('td');
+  elTableHead.textContent = this.shop;
+  elTableRow.appendChild(elTableHead);
+  for (var i = 0; i < 12; i++) {
+    var eltableData = document.createElement('td');
+    eltableData.textContent = this.hourly[i];
+    elTableRow.appendChild(eltableData);
   }
-  tableData.textContent = dailyTotal;
-  tableRow.appendChild(tableData);
-};
-var downtown = new DonutShop('shop1', 8, 43, 4.5);
-var capitolHill =  new DonutShop('shop2', 4, 37, 2.00);
-var southLakeUnion = new DonutShop('shop3', 9, 23, 6.33);
-var wedgewood = new DonutShop('shop4', 2, 28, 1.25);
-var ballard = new DonutShop('shop5', 8, 58, 3.75);
-downtown.render();
-capitolHill.render();
-southLakeUnion.render();
-wedgewood.render();
-ballard.render();
+  elDailyTotal.textContent = dailyTotal;
+  elTableRow.appendChild(elDailyTotal);
+  return elTableRow;
+  };
 
-// console.log(downtown.hourlyAmount());
-// console.log(downtown.dailyAmount());
+window.DonutShop = DonutShop;
+
+})();
+
