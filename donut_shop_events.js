@@ -11,7 +11,7 @@
   var ballard = new DonutShop('Ballard', 8, 58, 3.75);
 
   var renderAllShops = function() {
-    elTable.innerHTML = '<tr><th style="font-family: Helvetica; font-size: 15px"></th><td style="font-family: Helvetica; font-size: 15px; "> 6 AM </td><td style="font-family: Helvetica; font-size: 15px"> 7 AM </td><td style="font-family: Helvetica; font-size: 15px"> 8 AM </td><td style="font-family: Helvetica; font-size: 15px"> 9 AM </td><td style="font-family: Helvetica; font-size: 15px"> 10 AM </td><td style="font-family: Helvetica; font-size: 15px"> 11 PM </td><td style="font-family: Helvetica; font-size: 15px"> 12 PM </td><td style="font-family: Helvetica; font-size: 15px"> 1 PM </td><td style="font-family: Helvetica; font-size: 15px"> 2 PM </td><td style="font-family: Helvetica; font-size: 15px"> 3 PM </td><td style="font-family: Helvetica; font-size: 15px"> 4 PM </td><td style="font-family: Helvetica; font-size: 15px"> 5 PM </td><td style="font-family: Helvetica; color: orange; font-size: 18px">Total</td></tr>';
+    elTable.innerHTML = '<tr><th class ="location"> Location </th><td class ="hours"> 6 AM </td><td class ="hours"> 7 AM </td><td class ="hours"> 8 AM </td><td class ="hours"> 9 AM </td><td class ="hours"> 10 AM </td><td class ="hours"> 11 PM </td><td class ="hours"> 12 PM </td><td class ="hours"> 1 PM </td><td class ="hours"> 2 PM </td><td class ="hours"> 3 PM </td><td class ="hours"> 4 PM </td><td class ="hours"> 5 PM </td><td class="total">Total</td></tr>';
     elTable.appendChild(downtown.render());
     elTable.appendChild(capitolHill.render());
     elTable.appendChild(southLakeUnion.render());

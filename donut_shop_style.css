@@ -1,0 +1,252 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*---------------------------------------------
+END OF NORMALIZE
+---------------------------------------------*/
+
+body {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  background-color: hsla(181, 56%, 51%, 0.3);
+}
+
+div.title1 {
+  text-align: center;
+  height: 6em;
+  width: 60em;
+  padding: .1em;
+  margin: .5em;
+  border: .1em solid #F3B562;
+  background-color: hsla(163, 71%, 75%, 0.5);
+  border-radius: 1em;
+}
+
+h1 {
+  text-shadow: 0px 2px 2px white;
+  text-align: center;
+  font-size:  2.2em;
+  font-style: bold;
+  font-weight: 600;
+  letter-spacing: .04em;
+  margin: .3em;
+  padding: .5em;
+  border: .05em solid hsla(34, 86%, 67%, 0.5);
+  border-radius: .3em;
+  background-color: #FFF8E8;
+  color: hsla(352, 0%, 0%, 0.5);
+}
+
+div.paragraph1 {
+  height: 7em;
+  width: 45em;
+  padding: 1em;
+  margin: 1em;
+  border: .1em solid #F3B562;
+  background-color: #FFF8E8;
+  border-radius: .5em;
+}
+
+p.description {
+  text-align: justify;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.3em;
+  letter-spacing: .06em;
+  padding: 1em;
+  border-radius: .5em;
+  color: black;
+  border: .1em solid hsla(34, 86%, 67%, 0.8);
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+div.table {
+  text-align: center;
+  height: 16em;
+  width: 60em;
+  padding: 1.5em;
+  margin: 1em;
+  border: .1em solid #F3B562;
+  background-color: #FFF8E8;
+  border-radius: .5em;
+}
+
+table {
+  width: 60em;
+}
+
+th, td {
+  font-weight: 400;
+  padding: .5em .6em .6em .6em;
+  border: .1em solid hsla(34, 86%, 67%, 0.3);
+  background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+th.location {
+  font-weight: 450;
+  font-size: 1.2em;
+  background-color: hsla(163, 71%, 75%, 0.5);
+  border: .1em solid hsla(163, 71%, 75%, 0.5);
+}
+
+td.hours {
+  font-weight: 400;
+  font-size: 1em;
+  background-color: hsla(34, 86%, 67%, 0.3);
+  border: .1em solid hsla(34, 86%, 67%, 0.3);
+}
+
+td.total {
+  font-weight: 450;
+  font-size: 1.2em;
+  background-color: hsla(163, 71%, 75%, 0.5);
+  border: .1em solid hsla(163, 71%, 75%, 0.5);
+}
+
+div.enter-instruction {
+  height: 8.5em;
+  width: 20em;
+  padding: 1em;
+  margin: 1em;
+  border: .1em solid hsla(34, 86%, 67%, 0.9);
+  background-color: #FFF8E8;
+  border-radius: .5em;
+}
+
+p.instructions {
+  text-align: justify;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.3em;
+  letter-spacing: .06em;
+  padding: 1em;
+  color: black;
+  border: .1em solid hsla(34, 86%, 67%, 0.5);
+  background-color: hsla(0, 0%, 100%, 0.5);
+  border-radius: .5em;
+}
+
+div.enter-here {
+  text-align: left;
+  height: 22em;
+  width: 30em;
+  padding: 1em;
+  margin: 1em;
+  border: .1em solid #F3B562;
+  background-color: #FFF8E8;
+  border-radius: .5em;
+}
+
+h4 {
+  text-shadow: 0px 1px 1px white;
+  text-align: justify;
+  font-size: 1.2em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3em;
+  letter-spacing: .06em;
+  padding: 1em;
+  width: 12em;
+  color: black;
+  border: .1em solid hsla(163, 71%, 75%, 0.5);
+  background-color: hsla(163, 71%, 75%, 0.5);
+  border-radius: .5em;
+}
+
+div.forms {
+  text-align: left;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.3em;
+  letter-spacing: .06em;
+  padding: .5em;
+  color: black;
+  border: .1em solid hsla(34, 86%, 67%, 0.5);
+  background-color: hsla(0, 0%, 100%, 0.5);
+  border-radius: .5em;
+  margin: 1em;
+  width: 22em;
+  border: .1em solid white;
+}
+
+input {
+  font-size: 1em;
+  border: .1em solid hsla(34, 86%, 67%, 0.5);
+  background-color: hsla(0, 0%, 100%, 0.5);
+  border-radius: .5em;
+}
+
+input:focus, input:hover{
+  border: .1em solid hsla(163, 71%, 75%, 0.5);
+}
+
+div.button1 {
+  margin: 1em;
+  width: 20em;
+  text-align: left;
+}
+
+button {
+  text-shadow: 0px 1px 1px white;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.3em;
+  letter-spacing: .06em;
+  background-color: hsla(163, 71%, 75%, 0.5);
+  border: .1em solid hsla(163, 71%, 75%, 0.5);
+  border-radius: .5em;
+}
+
+button:hover {
+  background-color: hsla(34, 86%, 67%, 0.3);
+  border: .1em solid hsla(34, 86%, 67%, 0.3);
+}
