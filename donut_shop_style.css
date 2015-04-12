@@ -54,15 +54,14 @@ END OF NORMALIZE
 body {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
   background-color: hsla(181, 56%, 51%, 0.3);
+
 }
 
 div.title1 {
   text-align: center;
-  height: 6em;
-  width: 60em;
   padding: .1em;
-  margin: .5em;
-  border: .1em solid #F3B562;
+  margin: .3em;
+  border: .1em solid hsla(39, 100%, 50%, 1.0);
   background-color: hsla(163, 71%, 75%, 0.5);
   border-radius: 1em;
 }
@@ -70,24 +69,57 @@ div.title1 {
 h1 {
   text-shadow: 0px 2px 2px white;
   text-align: center;
-  font-size:  2.2em;
+  font-size:  2.5em;
   font-style: bold;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: .04em;
   margin: .3em;
   padding: .5em;
-  border: .05em solid hsla(34, 86%, 67%, 0.5);
+  border: .04em solid hsla(39, 100%, 50%, 1.0);
   border-radius: .3em;
   background-color: #FFF8E8;
-  color: hsla(352, 0%, 0%, 0.5);
+  color: hsla(345, 100%, 74%, 1.0);
+}
+
+div.click {
+  text-align: center;
+  border: .1em solid #F3B562;
+  background-color: hsla(163, 71%, 75%, 0.5);
+  border-radius: .5em;
+  width: 10em;
+  padding: .2em;
+}
+
+img.skull-cat {
+  margin-top: .5em;
+  margin-bottom: .1em;
+  padding: 1em;
+  height: 7em;
+  width: 7em;
+  border: .1em solid hsla(39, 100%, 50%, 1.0);
+  border-radius: .5em;
+  background-color: hsla(0, 0%, 100%, 0.8);
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-right: 25%;
+  margin-left: 25%;
+  padding: .08em;
+  width: 3em;
+  border: .05em solid hsla(39, 100%, 50%, 1.0);
+  border-radius: .3em;
+  background-color:#FFF8E8;
+  color: hsla(345, 100%, 74%, 1.0);
 }
 
 div.paragraph1 {
-  height: 7em;
   width: 45em;
   padding: 1em;
   margin: 1em;
-  border: .1em solid #F3B562;
+  border: .1em solid hsla(39, 100%, 50%, 0.6);
   background-color: #FFF8E8;
   border-radius: .5em;
 }
@@ -102,23 +134,35 @@ p.description {
   padding: 1em;
   border-radius: .5em;
   color: black;
-  border: .1em solid hsla(34, 86%, 67%, 0.8);
+  border: .1em solid hsla(39, 100%, 50%, 1.0);
   background-color: hsla(0, 0%, 100%, 0.5);
 }
 
+/*img.donut-cat {
+  height: 20em;
+  margin: 1em;
+  padding: 1em;
+  border: .1em solid #F3B562;
+  border-radius: .5em;
+  background-color: hsla(0, 0%, 100%, 0.8);
+}
+
+POSSIBLY FOR FUTURE PHOTO*/
+
 div.table {
   text-align: center;
-  height: 16em;
-  width: 60em;
   padding: 1.5em;
-  margin: 1em;
-  border: .1em solid #F3B562;
+  margin-top: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
+  border: .1em solid hsla(39, 100%, 50%, 0.6);
   background-color: #FFF8E8;
   border-radius: .5em;
 }
 
 table {
-  width: 60em;
+  text-align: center;
+  width: 100%;
 }
 
 th, td {
@@ -148,13 +192,11 @@ td.total {
   background-color: hsla(163, 71%, 75%, 0.5);
   border: .1em solid hsla(163, 71%, 75%, 0.5);
 }
-
 div.enter-instruction {
-  height: 8.5em;
   width: 20em;
   padding: 1em;
   margin: 1em;
-  border: .1em solid hsla(34, 86%, 67%, 0.9);
+  border: .1em solid hsla(39, 100%, 50%, 0.6);
   background-color: #FFF8E8;
   border-radius: .5em;
 }
@@ -168,24 +210,23 @@ p.instructions {
   letter-spacing: .06em;
   padding: 1em;
   color: black;
-  border: .1em solid hsla(34, 86%, 67%, 0.5);
+  border: .1em solid hsla(39, 100%, 50%, 1.0);
   background-color: hsla(0, 0%, 100%, 0.5);
   border-radius: .5em;
 }
 
 div.enter-here {
   text-align: left;
-  height: 22em;
   width: 30em;
   padding: 1em;
   margin: 1em;
-  border: .1em solid #F3B562;
+  border: .1em solid hsla(39, 100%, 50%, 0.6);
   background-color: #FFF8E8;
   border-radius: .5em;
 }
 
 h4 {
-  text-shadow: 0px 1px 1px white;
+  text-shadow: 0px 1px 1px grey;
   text-align: justify;
   font-size: 1.2em;
   font-style: normal;
@@ -194,9 +235,9 @@ h4 {
   letter-spacing: .06em;
   padding: 1em;
   width: 12em;
-  color: black;
-  border: .1em solid hsla(163, 71%, 75%, 0.5);
-  background-color: hsla(163, 71%, 75%, 0.5);
+  color: white;
+  border: .1em solid hsla(345, 100%, 74%, 0.7);
+  background-color: hsla(345, 100%, 74%, 0.7);
   border-radius: .5em;
 }
 
@@ -212,7 +253,7 @@ div.forms {
   border: .1em solid hsla(34, 86%, 67%, 0.5);
   background-color: hsla(0, 0%, 100%, 0.5);
   border-radius: .5em;
-  margin: 1em;
+  margin-top: 1em;
   width: 22em;
   border: .1em solid white;
 }
@@ -229,9 +270,13 @@ input:focus, input:hover{
 }
 
 div.button1 {
-  margin: 1em;
+  margin-top: 1em;
   width: 20em;
   text-align: left;
+}
+
+div.lower-page {
+  margin-top: 0em;
 }
 
 button {

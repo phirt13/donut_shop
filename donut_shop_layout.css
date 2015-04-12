@@ -1,0 +1,37 @@
+#main-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#title-box {
+  position: relative;
+}
+
+#annoying-click {
+  position: fixed;
+  top: 19% ;
+  left: 85%;
+}
+
+#table-box {
+  position: relative;
+  width: 78%;
+}
+
+#lower-box {
+  position: relative;
+  width: 90%;
+  margin: 0em;
+}
+
+#instructions-box {
+  position: absolute;
+  width: 30%;
+
+}
+#enter-box {
+  position: absolute;
+  right: 25%;
+  width: 35%;
+}
+

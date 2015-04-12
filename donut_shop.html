@@ -2,49 +2,60 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <title>Top Pot Donuts: Baking Schedule</title>
+    <title>Top Pot Donuts: Baking Schedule!</title>
     <link type="text/css" href="donut_shop_style.css" rel="stylesheet" />
+    <link type="text/css" href="donut_shop_layout.css" rel="stylesheet" />
 </head>
-<body>
-  <div class="title1">
-    <h1>Top Pot Donuts: Estimated Baking Schedule</h1>
+<body id="main-container">
+  <div class="title1" id="title-box">
+    <h1>トップポットドーナツ：推定ベーキングスケジュール!!!</h1>
+
   </div>
-  <div class="paragraph1">
-    <p class="description">This is an estimated baking schedule for five Seattle-area Top Pot Donut shops.  The schedule asssumes that in order to have bakery fresh donuts the baking schedule would need to begin one hour before opening time and would end one hour before closing time.</p>
+  <div class="click" id="annoying-click">
+    <a href="http://vk.com/video-52746918_165093787?z=video-52746918_165093787%2Fclub52746918%2Calbum-52746918">
+     <img  class ="skull-cat" src="http://img1.ak.crunchyroll.com/i/spire2/2708a8baae2635615736b6f7de62e2f81372631787_large.jpg"></a>
+     <h3>何?!!</h3>
+  </div>
+  <div class="paragraph1" id="paragraph1-box">
+    <p class="description">これで5シアトル地域トップポットドーナツショップの推定ベーキングスケジュール！スケジュールはパン屋新鮮なドーナツを持つためにベーキングスケジュールは時間を開く前に1時間を開始する必要があり、時間を閉じる前に一時間を終了することを前提として!!</p>
   </div>
     <main id="content"></main>
-      <div class="table">
+      <div class="table" id="table-box">
         <table id="shop-table">
         </table>
       </div>
-      <div class="enter-instruction">
-        <p class="instructions">Enter data attributes for a new Top Pot Shop to see instant estimates created for that location.  The shop will be added in a new row on the bottom of the table.<p>
+      <div class="lower-page" id="lower-box">
+      <div class="enter-instruction" id= "instructions-box">
+        <p class="instructions">その場所のために作成インスタント見積もりを表示するには、新しいトップポットショップのためのデータ属性を入力してください！ショップでは、表の一番下に新しい行に追加されます!<p>
       </div>
-      <div class="enter-here">
-        <h4>Add a new shop here:</h4>
+      <div class="enter-here" id="enter-box">
+        <h4>ここに新しい店を追加!!!</h4>
           <form id="new-location-form">
           <div class="forms">
-            <label for="location">1.) Shop Location:</label>
-            <input name="location" type="text" placeholder="add location here">
+            <label for="location">1.）ショップ場所!</label>
+            <input name="location" type="text" placeholder="ここに場所を追加">
           </div>
           <div class="forms">
-            <label for="MinCustomers">2.) Min Customers:</label>
+            <label for="MinCustomers">2.）最小お客様!</label>
             <input name="minCustomers" type="text" size="5" placeholder="#">
           </div>
           <div class="forms">
-            <label for="MaxCustomers">3.) Max Customers:</label>
+            <label for="MaxCustomers">3.）マックスお客様!</label>
             <input name="maxCustomers" type="text" size="5" placeholder="#">
           </div>
           <div class="forms">
-            <label for="AvgDonut">4.) Average Donuts:</label>
+            <label for="AvgDonut">4.）平均ドーナツ!</label>
             <input name="avgDonut" type="text" size="5" placeholder="#">
           </div>
           <div class="button1">
-            <button id"add-new-location">Add Shop</button>
+            <button id"add-new-location">ショップを追加!!!</button>
           </div>
           </form>
           </div>
+        </div>
+
 </body>
 <script src="donut_shop_domain_model.js"></script>
 <script src="donut_shop_events.js"></script>
+
 </html>
